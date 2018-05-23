@@ -1,16 +1,19 @@
-#pragma once
+
+
+#ifndef UNTITLED1_BOARD_H
+#define UNTITLED1_BOARD_H
+
 #include <iostream>
 #include <string>
-#include <vector>
 #include "Coordinate.h"
-#include "BuildBoard.h"
+#include "square.h"
 #include "IllegalCoordinateException.h"
 #include "IllegalCharException.h"
 
 using namespace std;
-class Board {
+class Board{
 
-	BuildBoard** buildBoard;
+	square** board;
 	int _size;
 
 public:
@@ -18,8 +21,12 @@ public:
 	Board(int);
 	Board(const Board&);
 	~Board();
-	BuildBoard& operator [](vector<int> vec);
+	square& operator [](Coordinate)const;
 	friend ostream& operator <<(ostream&, const Board&);
 	Board& operator =(char);
 	Board& operator =(Board&);
+	int size()const{return _size;}
+	int size(){return _size;}
 };
+
+#endif //UNTITLED1_BOARD_H
