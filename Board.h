@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Coordinate.h"
 #include "BuildBoard.h"
 #include "IllegalCoordinateException.h"
 #include "IllegalCharException.h"
