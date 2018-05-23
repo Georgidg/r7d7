@@ -10,7 +10,7 @@ using namespace std;
 class Board {
 
 	BuildBoard** buildBoard;
-	int size;
+	int _size;
 
 public:
 	Board();
