@@ -42,11 +42,11 @@ Board& Board::operator=(Board & board) {
 	}
 	return *this;
 }
-BuildBoard& Board::operator[](vector<int> vec){
-	if(vec[0]>=0 && vec[1]>=0 && vec[0]<_size && vec[1]<_size){
-		return this->buildBoard[vec[0]][vec[1]];
+BuildBoard&   Board::operator [](Coordinate c)const {
+	if (c.x<_size && c.y<_size) {
+		return this->buildBoard[c.x][c.y];
 	}
-	else throw IllegalCoordinateException(vec[0],vec[1]);
+	else throw IllegalCoordinateException(c.x, c.y);
 
 }
 
