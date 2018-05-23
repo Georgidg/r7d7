@@ -57,7 +57,7 @@ BuildBoard&   Board::operator [](Coordinate c)const {
 	}
 	else throw IllegalCoordinateException(c.x, c.y);
 
-}
+}//
 
 
 Board::Board()
