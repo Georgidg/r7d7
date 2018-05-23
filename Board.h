@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 #include "Coordinate.h"
-#include "square.h"
+#include "BuildBoard.h"
 #include "IllegalCoordinateException.h"
 #include "IllegalCharException.h"
 
