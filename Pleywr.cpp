@@ -1,14 +1,16 @@
-#include "Coordinate.h"
+#include "pleywr.h"
 
-Coordinate::Coordinate(unsigned int i,unsigned int j)
+
+const Coordinate Champion::play(const Board& board)
 {
-	this->x=i;
-	this->y=j;
+	int n=board.size()-1;
+	Coordinate c{n,0};
+	if(board[c].get()=='.') return c;
+	for(int i=0;i<=n;i++)
+	{
+		Coordinate c{i,n-i};
+		if(board[c].get()=='.') return c;
+	}
+	Coordinate c1{0,0};
+	return c1;
 }
-
-Coordinate::Coordinate(int i,int j)
-{
-	i=(unsigned int)i;
-	j=(unsigned int)j;
-	this->x=i;
-	this->y=j;
