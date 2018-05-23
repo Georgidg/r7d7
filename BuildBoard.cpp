@@ -1,5 +1,7 @@
 #include "BuildBoard.h"
 
+
+
 BuildBoard::BuildBoard() {
 	this->set('.');
 }
