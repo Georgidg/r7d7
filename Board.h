@@ -13,7 +13,7 @@
 using namespace std;
 class Board{
 
-	square** board;
+	BuildBoard** board;
 	int _size;
 
 public:
@@ -21,7 +21,7 @@ public:
 	Board(int);
 	Board(const Board&);
 	~Board();
-	square& operator [](Coordinate)const;
+	BuildBoard& operator [](Coordinate)const;
 	friend ostream& operator <<(ostream&, const Board&);
 	Board& operator =(char);
 	Board& operator =(Board&);
