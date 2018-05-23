@@ -5,8 +5,8 @@ const Coordinate Player::play(const Board& board)
 {
 
 
-	Coordinate cor{0,0};
-	return cor;
+	Coordinate c1{0,0};
+	return c1;
   
   
 }
