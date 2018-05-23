@@ -13,7 +13,7 @@
 using namespace std;
 class Board{
 
-	BuildBoard** board;
+	BuildBoard** BuildBoard;
 	int _size;
 
 public:
