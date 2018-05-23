@@ -50,6 +50,7 @@ BuildBoard&   Board::operator [](Coordinate c)const {
 
 }
 
+
 Board::Board()
 {
 	this->_size=0;
