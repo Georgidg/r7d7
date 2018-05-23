@@ -46,3 +46,4 @@ public:
 	const string name() const override { return "YXPlayer"; }
 	const Coordinate play(const Board& board) override;
 };
+
