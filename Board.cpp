@@ -36,7 +36,7 @@ Board& Board::operator=(Board & board) {
 		buildBoard[i] = new BuildBoard[board._size];
 	}
 	for (int i = 0; i < board._size; i++) {
-		for (int j = 0; j < board.s_ize; j++) {
+		for (int j = 0; j < board._size; j++) {
 			this->buildBoard[i][j].set(board.buildBoard[i][j].get());
 		}
 	}
