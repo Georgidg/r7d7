@@ -42,6 +42,15 @@ Board& Board::operator=(Board & board) {
 	}
 	return *this;
 }
+
+BuildBoard& Board:: operator [](Coordinate c)const{
+if (c.x<_size && c.y<_size) {
+		return this->buildBoard[c.x][c.y];
+	}
+	else throw IllegalCoordinateException(c.x, c.y);
+
+}
+
 BuildBoard&   Board::operator [](Coordinate c)const {
 	if (c.x<_size && c.y<_size) {
 		return this->buildBoard[c.x][c.y];
