@@ -29,7 +29,7 @@ Board& Board::operator=(char c) {
 	return *this;
 }
 Board& Board::operator=(Board & board) {
-	this->~Board();
+	free(this->buildBoard);
 	this->_size = board._size;
 	this->buildBoard = new BuildBoard*[board._size];
 	for (int i=0;i<board._size;i++) {
