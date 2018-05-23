@@ -12,7 +12,7 @@ class TicTacToe
 		TicTacToe(int);
 		void play(Player&,Player&);
 		Board board()const{return b;}
-    	Player& theWinner()const;
+    	Player& winner()const;
 	private:
 		bool done();
 };
