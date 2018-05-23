@@ -7,7 +7,9 @@ BuildBoard::BuildBoard(char c) {
 	this->set(c);
 }
 BuildBoard& BuildBoard::operator=(char c) {
+	if(this->get()=='.'||c=='.')
 	this->set(c);
+	else throw IllegalCharException(c);
 	return *this;
 }
 void BuildBoard::set(char c) {
